@@ -46,13 +46,7 @@ document.addEventListener("keydown", function (e) {
 
 //Page Navigation
 
-// document.querySelectorAll(".nav__link").forEach(function (el) {
-//   el.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const id = this.getAttribute("href");
-//     document.querySelector(id).scrollIntoView({behavior: 'smooth'})
-//   });
-// });
+
 
 //Delegations event
 document.querySelector(".nav__links").addEventListener("click", function (e) {
@@ -93,58 +87,6 @@ message.style.height =
 
 const h1 = document.querySelector("h1");
 
-//*********************************** */
-// btnScrollTo.addEventListener("click", function (e) {
-//   // const s1coords = section1.getBoundingClientRect();
-//   // console.log(e.target.getBoundingClientRect());
-//   // console.log("Current scroll", window.pageXOffset, pageYOffset);
-//   // console.log(
-//   //   "Height and width viewport",
-//   //   document.documentElement.clientHeight,
-//   //   document.documentElement.clientWidth
-//   // );
-//   //Scrolling
-//   // window.scrollTo(
-//   //   s1coords.left + window.pageXOffset,
-//   //   s1coords.top + window.pageYOffset
-//   // );
-//   //OLD SCHOOL WAY
-//   // window.scrollTo({
-//   //   left: s1coords.left + window.pageXOffset,
-//   //   top: s1coords.top + window.pageYOffset,
-//   //   behavior: "smooth",
-//   // });
-
-//   section1.scrollIntoView({ behavior: "smooth" });
-// });
-
-// const h1 = document.querySelector("h1");
-
-// h1.addEventListener("mouseenter", function (e) {
-//   // alert("Great! You are reading the heading :D");
-// });
-
-// //random color rgb(225,255,255)
-// const randomInt = (min, max) =>
-//   Math.floor(Math.random() * (max - min + 1) + min);
-
-// const randomColor = () =>
-//   `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
-
-// document.querySelector(".nav__link").addEventListener("click", function (e) {
-//   this.style.backgroundColor = randomColor();
-//   e.stopPropagation();
-// });
-// document.querySelector(".nav__links").addEventListener("click", function (e) {
-//   this.style.backgroundColor = randomColor();
-// });
-// document.querySelector(".nav").addEventListener(
-//   "click",
-//   function (e) {
-//     this.style.backgroundColor = randomColor();
-//   },
-//   true
-// );
 
 //event delegation
 
@@ -174,19 +116,6 @@ const handHover = function (e, opacity) {
   });
   logo.style.opacity = this;
 };
-
-//Passing "argument" into handler
-// nav.addEventListener("mouseover", handHover.bind(0.5));
-// nav.addEventListener("mouseout", handHover.bind(1));
-
-// Sticky navigator
-// const initialCoords = section1.getBoundingClientRect();
-// console.log(initialCoords);
-// window.addEventListener("scroll", function (e) {
-
-//   if (window.scrollY > initialCoords.top) nav.classList.add('sticky');
-//   else nav.classList.remove('sticky')
-// });
 
 ///Sticky nav using Intersection Observer API
 
